@@ -47,7 +47,7 @@ app.post('/register',(req,res) =>  {register.handleRegister(req,res,db,bcrypt)})
 app.get('/profile/:id', (req, res) =>  {profile.handleProfile(req,res,db)})
 app.put('/image', (req, res) =>  {image.handleImage(req,res,db)})
 
-app.listen(3000, () => {
+app.listen(5432, () => {
     console.log("App is running on port 3000");
 });
 
